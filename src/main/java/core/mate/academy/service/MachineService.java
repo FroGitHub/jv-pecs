@@ -7,7 +7,7 @@ import java.util.List;
  * Parameterize this service and add its implementation in a separate class.
  */
 public interface MachineService<T> {
-    List<Machine> getAll(Class type);
+    List<T> getAll(Class type);
 
     void fill(List<? super Machine> machines, Machine value);
 
